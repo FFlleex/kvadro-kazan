@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Квартира из демонстрационного каталога КВАДРО.">
+<title>Квартира — КВАДРО</title>
+<link rel="icon" href="assets/mark.svg" type="image/svg+xml">
+<link rel="stylesheet" href="style.css">
+<script type="module" src="apartment.js"></script>
+</head>
+<body>
+<a class="skip" href="#main">К содержанию</a>
+<header class="header wrap"><a class="brand" href="./">КВАДРО<span>.</span></a><a class="header-action" id="return-link" href="./#catalog">← Все квартиры</a></header>
+<main class="detail wrap" id="main">
+  <div id="missing" hidden><h1>Квартира не найдена</h1><p><a href="./#catalog">Вернуться в каталог ↗</a></p></div>
+  <article id="apartment" hidden>
+    <p class="eyebrow" id="district"></p>
+    <h1 id="title"></h1>
+    <div class="detail-grid">
+      <section aria-label="Галерея квартиры">
+        <figure class="gallery"><img id="photo" width="768" height="512" alt=""><figcaption id="caption" aria-live="polite"></figcaption></figure>
+        <div class="gallery-controls" id="gallery-controls" aria-label="Выбор фотографии"></div>
+      </section>
+      <section class="facts" aria-labelledby="rent">
+        <h2 id="rent"></h2>
+        <dl><dt>Площадь</dt><dd id="area"></dd><dt>Этаж</dt><dd id="floor"></dd><dt>Залог</dt><dd id="deposit"></dd></dl>
+        <p id="description"></p>
+        <small>Демонстрационное объявление</small>
+      </section>
+    </div>
+  </article>
+  <noscript><p>Для просмотра страницы включите JavaScript.</p></noscript>
+</main>
+<footer class="footer wrap"><a class="brand" href="./">КВАДРО<span>.</span></a><small>Портфолио-проект. Объявления и фотографии демонстрационные.</small></footer>
+</body>
+</html>
